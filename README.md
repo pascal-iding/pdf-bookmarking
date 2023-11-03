@@ -39,27 +39,19 @@ input besides your bookmark.
 
 ## License
 
-This project is licensed under the GNU General Public License version 3 (GPL-3.0). Please see the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) file for more details.
+This project is licensed under the GNU General Public License version 3 (GPL-3.0). Please see the [LICENSE](.>license.txt) file for more details.
 
 ## Attribution
 
 No attribution is neccessary.
 
-## Code of Conduct
-
-To understand our code of conduct when participating in this project, please review the [CONDUCT](/CONDUCT.md) file.
-
 ## Contribution
 
-If you want to contribute to this project, please refer to [Contribution](/CONTRIBUTING.md).
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. 
 
 ## Contact
 
-Get in touch with me!
-Suggestions, feedback and contributions are very welcome.
-
-Name: Pascal Iding
-**Email:** pascaliding@gmail.com
 **Git Hub:** @pascal-iding
 
 ## Acknowledgements
