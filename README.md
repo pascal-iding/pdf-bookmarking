@@ -5,7 +5,7 @@
 
 ![](/icons/logo.png)
 
-> *"Finally, I can bookmark pdf's in my browser!
+> Finally, I can bookmark pdf's in my browser!
 
 
 ## About The Project
