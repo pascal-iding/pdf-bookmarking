@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Pdf Bookmarker</title>
+
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="error hide" id="error-message">
+        Error message
+    </div>
+    <header>
+        <h1>Superior Pdf Bookmarking</h1>
+        <h2>Bookmark your <span>Pdf's</span></h2>
+    </header>
+    <main>
+        <h3 id="title">File is not a pdf</h3>
+        <div>
+            <a href="#" class="coffee" id="mode-current">Only current pdf</a> | <a href="#" id="mode-all">All bookmarks</a>
+        </div>
+        <div class="new-bookmark-field" id="new-bookmark-field">
+            <form autocomplete="off">
+                <label style="flex-grow: 1;" for="bookmark-name"> <span>New bookmark title:</span>
+                    <input class="input" type="text" name="bookmark-name" placeholder="What is your bookmark for" id="new-bookmark-title">
+                </label>
+                <label for="new-bookmark-page"> <span>Page:</span>
+                    <input class="number" type="number" name="new-bookmark-page" value="1" min="1" id="new-bookmark-page">
+                </label>
+                <button class="new-button" id="add-bookmark-button" type="button">+</button>
+            </form>
+        </div>
+        <input autocomplete="off" class="input" type="text" placeholder="Search ..." name="search" id="search-input">
+        <div class="bookmarks-list" id="bookmarks-list">
+            
+        </div>
+        <button class="button" style="width: 75px;" id="delete-all-button">Delete all</button>
+    </main>
+    <nav class="footer">
+        <span class="coffee"><a href="https://hunderettung-ev.com/index.php/unterstuetzung/spenden" target="_blank">Buy me a coffee ☕</a></span>
+        <a href="#">View on Github</a>
+    </nav>
+
+    <script src="./js/model.js"></script>
+    <script src="./js/view.js"></script>
+    <script src="./js/controller.js"></script>
+</body>
+</html>

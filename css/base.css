@@ -1,0 +1,216 @@
+
+body {
+    width: 450px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    margin: 0;
+    overflow: auto;
+    min-height: 500px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+h2 > span {
+    background-color: #e49eaf84;
+    padding-inline: 15px;
+    border-radius: 50px;
+    font-weight: normal;
+}
+
+.input {
+    border: none;
+    background-color: #eaeaea;
+    padding-inline: 5px;
+    padding-block: 5px;
+    border-radius: 5px;
+    height: 25px;
+    outline: none;
+}
+
+.input-bright {
+    background-color: white;
+    border: 1px solid #eaeaea;
+    flex: 1;
+}
+
+.number {
+    border: none;
+    background-color: #eaeaea;
+    padding-inline: 5px;
+    padding-block: 5px;
+    border-radius: 5px;
+    height: 25px;
+    outline: none;
+    max-width: 75px;
+    width: 75px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+form > label {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #e49eaf84;
+    color: white;
+    border: none;
+    text-decoration: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #e49eaf;
+}
+
+.divider {
+    box-sizing: border-box;
+    background-color: #cde0f391;
+    padding-inline: 5px;
+    width: 100%;
+    word-wrap: break-word;
+    cursor: pointer;
+    user-select: none;
+}
+
+#search {
+    background-color: #ffb3b3;
+}
+
+.bookmarks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    /* margin-top: 30px; */
+}
+
+.bookmark {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+}
+
+.bookmark-title {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}  
+
+.bookmark-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+.coffee {
+    background-color: #cde0f391;
+    padding-inline: 5px;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0000EE;
+}
+
+.input:read-only {
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input:read-only:hover {
+    background-color: #e49eaf84;
+}
+
+.accept {
+    background-color: #bfe4c3;
+}
+
+.accept:hover {
+    background-color: #B4D0B6;
+}
+
+.hide {
+    display: none;
+}
+
+.danger {
+    background-color: #F68E8E;
+}
+
+.danger:hover {
+    background-color: #fa7d7d;
+}
+
+.url-change-field {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.url-change-field > input {
+    width: 100%;
+}
+
+.error {
+    background-color: #F68E8E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-inline: 15px;
+    color: white;
+    font-size: normal;
+    cursor: pointer;
+}

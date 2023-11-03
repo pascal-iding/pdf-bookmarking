@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Superior Pdf Bookmarker",
+    "description": "A sophisticated free pdf bookmarking extension.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "./icons/logo.png"
+    },
+    "permissions": [
+      "tabs", 
+      "activeTab", 
+      "storage"
+    ]
+  }
