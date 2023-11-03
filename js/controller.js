@@ -195,6 +195,13 @@ const controller = {
                 view.methods.delete_all_button_remove_class('danger');
                 view.methods.set_delete_all_button_text('Delete all');
                 if(controller.data.mode.value == 'current') {
+                    model.methods.delete_all_bookmarks(controller.data.url)
+                        .then(function(){
+                            controller.$methods.draw_bookmarks();
+                        }).catch(function(error){
+                            view.methods.set_error_message(error)
+                            console.log.error(error)
+                        });
                     return
                 }
                 model.methods.delete_all_bookmarks()

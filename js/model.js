@@ -167,7 +167,31 @@ const model = {
                     });
                 })
             }
-            
+
+            return new Promise(function(resolve, reject) {
+                chrome.storage.sync.get(null, function(bookmarks){
+                    if (chrome.runtime.lastError) {
+                        // Reject the Promise with an error if there's an issue
+                        reject(chrome.runtime.lastError);
+                        return;
+                    }
+                    
+                    for(let timestamp in bookmarks){
+                        let bookmark = bookmarks[timestamp]
+                        if(bookmark.url == url){
+                            chrome.storage.sync.remove(timestamp.toString(), function() {
+                                if (chrome.runtime.lastError) {
+                                    // Reject the Promise with an error if there's an issue
+                                    reject(chrome.runtime.lastError);
+                                    return;
+                                }
+                                resolve();
+                                return;
+                            });
+                        }
+                    }
+                })  
+            })
         },
         delete_bookmark: function(timestamp){
             return new Promise(function(resolve, reject) {
