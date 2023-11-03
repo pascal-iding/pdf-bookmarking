@@ -31,7 +31,7 @@ const view = {
         },
         set_window_title: function(title){
             // Set title of the window (Name of the Pdf)
-            view.data.html.title.value = title
+            view.data.html.title.innerHTML = title
         },
         get_title_input: function(){
             // Get title of the input for creating new bookmarks

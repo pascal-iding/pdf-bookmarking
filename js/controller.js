@@ -127,7 +127,6 @@ const controller = {
                         reject(chrome.runtime.lastError);
                         return;
                     }
-
                     let url = tabs[0].url.split('#')[0];
                     let title = controller.$methods.get_pdf_title_from_url(url);
     
@@ -139,7 +138,6 @@ const controller = {
                         resolve();
                         return
                     }
-    
                     controller.data.title = title;
                     view.methods.set_window_title(title);
                     resolve();
@@ -200,7 +198,6 @@ const controller = {
                             controller.$methods.draw_bookmarks();
                         }).catch(function(error){
                             view.methods.set_error_message(error)
-                            console.log.error(error)
                         });
                     return
                 }
