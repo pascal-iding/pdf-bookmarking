@@ -3,8 +3,6 @@
 
 ## Bookmark your Pdf's
 
-![](/icons/logo.png)
-
 > Finally, I can bookmark pdf's in my browser!
 
 
