@@ -53,4 +53,4 @@ email, or any other method with the owners of this repository before making a ch
 **Git Hub:** @pascal-iding
 
 ## Acknowledgements
-- Thank you to OpenAi for generating the logo of this extension.
+- The app icon is ai generated (Midjourney).
